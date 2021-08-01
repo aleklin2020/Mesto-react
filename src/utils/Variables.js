@@ -60,7 +60,6 @@ const initialCards = [
   link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
 }
 ];
-
 const options = {
     link: 'https://mesto.nomoreparties.co/v1/cohort-25',
     token: {
@@ -68,7 +67,6 @@ const options = {
         'Content-Type': 'application/json',
     },
 }
-
 export {
   profilePopup,
   nameInput,
