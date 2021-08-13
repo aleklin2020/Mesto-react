@@ -4,27 +4,14 @@ import avatar from "../image/profile/image.jpg";
 import button from "../image/profile/add-button.svg";
 import Card from "./Card.js";
 import App from "./App.js";
-import Api from "../utils/Api.js";
+import Api from "../utils/api.js";
 import CurrentUserContext from '../contexts/CurrentUserContext';
 
 function Main(props) {
    const currentUser = React.useContext(CurrentUserContext);
-
-
-
-
-  
-
-
-
-
   function handleClick() {
     props.onCardClick(props.card);
   }
-
-
-
-
   return (
     <main className="main">
       <section className="profile-informashion">

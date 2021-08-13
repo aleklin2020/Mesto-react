@@ -11,7 +11,7 @@ import ImagePopup from "./ImagePopup";
 import Card from "./Card.js";
 import CurrentUserContext from '../contexts/CurrentUserContext';
 import {useEffect, useState} from 'react';
-import Api from '../utils/Api'
+import Api from '../utils/api'
 import EditProfilePopup from './EditProfilePopup';
 import EditAvatarPopup from './EditAvatarPopup';
 import AddPlacePopup from './AddPlacePopup';
