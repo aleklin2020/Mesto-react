@@ -4,14 +4,11 @@ import avatar from "../image/profile/image.jpg";
 import button from "../image/profile/add-button.svg";
 import Card from "./Card.js";
 import App from "./App.js";
-import Api from "../utils/api.js";
-import CurrentUserContext from '../contexts/CurrentUserContext';
+import CurrentUserContext from "../contexts/CurrentUserContext";
 
 function Main(props) {
-   const currentUser = React.useContext(CurrentUserContext);
-  function handleClick() {
-    props.onCardClick(props.card);
-  }
+  const currentUser = React.useContext(CurrentUserContext);
+
   return (
     <main className="main">
       <section className="profile-informashion">
@@ -51,7 +48,13 @@ function Main(props) {
       </section>
       <section className="elements">
         {props.cards.map((item) => (
-          <Card key={item._id} card={item} onCardClick={props.onCardClick} onCardLike={props.onCardLike} onCardDelete={props.onCardDelete} />
+          <Card
+            key={item._id}
+            card={item}
+            onCardClick={props.onCardClick}
+            onCardLike={props.onCardLike}
+            onCardDelete={props.onCardDelete}
+          />
         ))}
       </section>
     </main>
